@@ -1,11 +1,12 @@
 package com.jianshu.dao;
 
 import com.jianshu.pojo.Department;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
+@Repository
 public class DepartmentDao {
     //模拟数据库的数据
     private static Map<Integer, Department> departments = null;
@@ -18,11 +19,11 @@ public class DepartmentDao {
         departments.put(105,new Department(105,"财务部"));
     }
     //获得所有部门的信息
-    public Collection<Department> getDepartment(){
+    public Collection<Department> getDepartments(){
         return departments.values();
     }
     //通过id得到部门
-    public Department getDepartment(Integer id){
+    public Department getDepartmentById(Integer id){
         return departments.get(id);
     }
 }
