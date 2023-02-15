@@ -35,7 +35,7 @@ public class EmployeeDao {
         employees.put(employee.getId(),employee);
     }
 
-    private Collection<Employee> getAll(){
+    public Collection<Employee> getAll(){
         return  employees.values();
     }
 
