@@ -18,9 +18,9 @@ public class EmployeeDao {
     static {
         employees = new HashMap<Integer, Employee>();//创建一个部门表
         employees.put(1001,new Employee(1001,"AA","A12386@qq.com",1,new Department(101,"体育部")));
-        employees.put(1002,new Employee(1002,"BB","B12386@qq.com",1,new Department(102,"教学部")));
+        employees.put(1002,new Employee(1002,"BB","B12386@qq.com",0,new Department(102,"教学部")));
         employees.put(1003,new Employee(1003,"CC","C12386@qq.com",1,new Department(103,"有关部")));
-        employees.put(1004,new Employee(1004,"DD","D12386@qq.com",1,new Department(104,"无关部")));
+        employees.put(1004,new Employee(1004,"DD","D12386@qq.com",0,new Department(104,"无关部")));
         employees.put(1005,new Employee(1005,"EE","E12386@qq.com",1,new Department(105,"财务部")));
     }
 
