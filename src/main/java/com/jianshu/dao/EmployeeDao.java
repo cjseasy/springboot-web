@@ -27,7 +27,7 @@ public class EmployeeDao {
     @Autowired
     private DepartmentDao departmentDao;
 
-    private void save(Employee employee) {
+    public void save(Employee employee) {
         if (employee.getId() == null) {
             employee.setId(ininId++);
         }
@@ -39,11 +39,11 @@ public class EmployeeDao {
         return  employees.values();
     }
 
-    private Employee getEmployeeById(Integer id){
+    public Employee getEmployeeById(Integer id){
         return employees.get(id);
     }
 
-    private void delete(Integer id){
+    public void delete(Integer id){
         employees.remove(id);
     }
 }
